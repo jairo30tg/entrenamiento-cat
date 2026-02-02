@@ -14,7 +14,8 @@ import {
   BookOpen, 
   Target, 
   MinusCircle, 
-  PlusCircle 
+  PlusCircle,
+  Lightbulb
 } from 'lucide-react';
 
 // --- Constants ---
@@ -52,7 +53,7 @@ const HeroSection = () => (
         <span className="text-yellow-400 font-bold tracking-widest text-sm uppercase mb-4 block">
           ENTRENAMIENTO CAT 2026
         </span>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-[800] leading-tight mb-6">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-[800] mb-6 leading-tight">
           Cómo Asegurar tu Ingreso a la SUNAT (y un sueldo de S/ 5,100) en tu Primer Intento...
         </h1>
         <p className="text-gray-300 text-lg md:text-xl font-[600] mb-8 leading-relaxed">
@@ -81,39 +82,39 @@ const HeroSection = () => (
 const ProblemSection = () => (
   <section className="bg-white py-20 px-6">
     <div className="max-w-3xl mx-auto">
-      <SectionTitle center>¿Te suena familiar esta situación?</SectionTitle>
+      <SectionTitle center>¡ATENCIÓN BACHILLERES!</SectionTitle>
       
       <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
         <p>
           Has trabajado duro para obtener tu <strong className="text-black">Bachiller</strong>. Buscas <strong className="text-black">estabilidad laboral real</strong>, un sueldo digno y la tranquilidad de trabajar en una institución sólida como la <strong className="text-[#003366]">SUNAT</strong>.
         </p>
         
+        <p className="font-[600] text-gray-800 border-l-4 border-yellow-500 pl-4 bg-yellow-50 py-3">
+          Atención: Debido a la demanda operativa del Puerto de Chancay, se estima que la convocatoria inicie en Abril 2026. El reloj ya está corriendo y estar listo antes del anuncio oficial marcará la diferencia.
+        </p>
+        
         <div className="bg-[#F4F4F4] p-8 rounded-xl border-l-4 border-red-500 my-8">
           <p className="italic mb-4 font-semibold text-red-600 uppercase text-sm tracking-widest flex items-center gap-2">
-            <AlertCircle size={18} /> Pero la realidad es dura:
+            ⚠️ ¿POR QUÉ EL 80% DE TUS RIVALES YA PERDIÓ?
           </p>
           <ul className="space-y-4">
             <li className="flex items-start gap-3">
-              <XCircle className="text-red-500 mt-1 flex-shrink-0" size={20} />
-              <span><strong>El temario es enorme</strong> y no sabes por dónde empezar.</span>
+              <span className="mt-0.5 flex-shrink-0 text-xl leading-none">📊</span>
+              <span><strong>El Dato Real:</strong> Postulan 33,000 personas, pero el 80% va sin preparación específica. Son competencia "fantasma".</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="mt-0.5 flex-shrink-0 text-xl leading-none">⛔</span>
+              <span><strong>El Error Común:</strong> La mayoría pierde puntos porque intentan adivinar (-0.25). Al entrenar con ejercicios tipo examen, tendrás la seguridad para marcar la respuesta correcta sin dudar.</span>
             </li>
             <li className="flex items-start gap-3">
               <XCircle className="text-red-500 mt-1 flex-shrink-0" size={20} />
-              <span>Trabajas 8-10 horas al día y apenas tienes tiempo para estudiar.</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <XCircle className="text-red-500 mt-1 flex-shrink-0" size={20} />
-              <span>Las academias cuestan S/ 400+ y no garantizan nada.</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <XCircle className="text-red-500 mt-1 flex-shrink-0" size={20} />
-              <span><strong>El examen tiene una modalidad específica</strong> que nunca has practicado.</span>
+              <span><strong>Preparación Incompleta:</strong> El examen mide dos frentes: Conocimientos y Aptitud. La mayoría domina la teoría técnica, pero falla estrepitosamente en la agilidad mental y espacial, perdiendo puntos valiosos.</span>
             </li>
           </ul>
         </div>
 
-        <p className="font-[600]">
-          Carla, profesional como tú, fracasó en su primer intento por no conocer el formato real. <strong className="text-red-600">No desperdicies tu única oportunidad.</strong>
+        <p className="font-[600] text-center text-xl italic text-gray-800">
+          "Deja que ellos dependan de la suerte. Tú asegura tu vacante con estrategia."
         </p>
         
         <p className="text-2xl font-[800] text-[#003366] text-center mt-12">
@@ -127,15 +128,15 @@ const ProblemSection = () => (
 const SolutionSection = () => {
   const steps = [
     { title: "Acceso Inmediato", desc: "Plataforma disponible 24/7 sin esperas.", icon: <Zap /> },
-    { title: "Cronograma Express", desc: "Ruta exacta de 21 días para cubrir todo.", icon: <Calendar /> },
-    { title: "Práctica Directa", desc: "Banco de 500+ preguntas filtradas.", icon: <BookOpen /> },
+    { title: "Solucionario Detallado", desc: "Entiende el paso a paso de cada solución", icon: <Lightbulb /> },
+    { title: "Material Filtrado", desc: "Banco de 500+ preguntas filtradas.", icon: <BookOpen /> },
     { title: "Simulacro Real", desc: "Replica las condiciones del examen.", icon: <Target /> }
   ];
 
   return (
     <section className="bg-[#F4F4F4] py-20 px-6">
       <div className="max-w-7xl mx-auto">
-        <SectionTitle center blue>Presentamos: El Sistema de Simulacro Inverso</SectionTitle>
+        <SectionTitle center blue>Presentamos: El PACK DE ENTRENAMIENTO INTENSIVO CAT</SectionTitle>
         <p className="text-center text-gray-600 mb-12 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
           Es un entrenamiento intensivo con los ejercicios tipo y preguntas fijas que realmente vienen en el examen CAT SUNAT.
         </p>
@@ -171,7 +172,7 @@ const StackSection = () => (
         <SectionTitle>Lo que incluye (El Pack)</SectionTitle>
         <ul className="space-y-6">
           {[
-            { t: "Dominio de Razonamiento Verbal", d: "Acelera tu lectura crítica. Entrena con textos tributarios, sinónimos y analogías seleccionadas para ganar velocidad en la prueba." },
+            { t: "Dominio de Razonamiento Verbal", d: "Acelera tu lectura crítica. Entrena con textos densos, sinónimos y analogías diseñadas para que ganes velocidad y comprensión bajo presión." },
             { t: "Agilidad en Razonamiento Matemático", d: "Pierde el miedo a los números. Domina series, problemas lógicos y planteo de ecuaciones con métodos que no requieren calculadora." },
             { t: "Destreza en Razonamiento Espacial", d: "Entrena tu \"ojo clínico\". Ejercicios clave de rotación de sólidos y matrices visuales para superar la sección psicotécnica que filtra a la mayoría." },
             { t: "Banco \"Filtrado\" de 500+ Preguntas", d: "No pierdas tiempo con relleno. Practica exclusivamente con material 100% depurado de las convocatorias más recientes." },
@@ -194,23 +195,23 @@ const StackSection = () => (
 const TransformationSection = () => (
   <section className="bg-bone py-20 px-6">
     <div className="max-w-5xl mx-auto">
-      <SectionTitle center>Tu Vida tiene un antes y un después</SectionTitle>
+      <SectionTitle center>LA DIFERENCIA ENTRE INTENTAR E INGRESAR</SectionTitle>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="bg-red-50 p-8 rounded-2xl border border-red-100">
           <h3 className="text-xl font-[800] text-red-700 mb-6 flex items-center gap-2">
-            <MinusCircle size={24} /> ANTES
+            <MinusCircle size={24} /> EL POSTULANTE PROMEDIO
           </h3>
           <ul className="space-y-4 text-red-900/80">
             <li className="flex gap-2"><span>❌</span> <span>Estudias sin dirección, perdiendo tiempo.</span></li>
             <li className="flex gap-2"><span>❌</span> <span>Ansiedad por no saber qué esperar del examen.</span></li>
-            <li className="flex gap-2"><span>❌</span> <span>Gastas dinero en cursos genéricos e inútiles.</span></li>
+            <li className="flex gap-2"><span>❌</span> <span>Regala sus puntos (-0.25) por intentar adivinar.</span></li>
             <li className="flex gap-2"><span>❌</span> <span>Puntaje insuficiente y pérdida de oportunidad.</span></li>
           </ul>
         </div>
         <div className="bg-green-50 p-8 rounded-2xl border border-green-100">
           <h3 className="text-xl font-[800] text-green-700 mb-6 flex items-center gap-2">
-            <PlusCircle size={24} /> DESPUÉS
+            <PlusCircle size={24} /> TÚ CON ESTRATEGIA
           </h3>
           <ul className="space-y-4 text-green-900/80">
             <li className="flex gap-2"><span>✅</span> <span>Seguridad total al conocer el formato real.</span></li>
@@ -231,10 +232,10 @@ const BonusSection = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
         {[
           { 
-            title: "Cronograma Express", 
+            title: "Solucionario Detallado", 
             icon: <Calendar size={40} />, 
             val: "S/ 15", 
-            desc: "Tu ruta exacta de estudio de 21 días paso a paso." 
+            desc: "Entiende el razonamiento lógico de cada respuesta paso a paso." 
           },
           { 
             title: "Estrategia de Tiempo", 
@@ -258,7 +259,7 @@ const BonusSection = () => (
         ))}
       </div>
       <div className="text-center">
-        <CTAButton text="SÍ, QUIERO LOS BONOS Y EL ENTRENAMIENTO" className="px-12" />
+        <CTAButton text="SÍ, QUIERO LOS BONOS y EL ENTRENAMIENTO" className="px-12" />
       </div>
     </div>
   </section>
